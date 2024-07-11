@@ -1,7 +1,11 @@
 // class name of class{}
 
 class Monitor {
+ // direct class er nam diye variable access korte chaile setake bole access variable "static" use korte hoy
+  static String sample = 'sample-data';
+
   // attributes/properties
+  final String abc ='ABC'; // কোনো একটির মান নির্দিষ্ট করে দিতে চাইলে final
  // String companyName = 'LG';
  //  String model = 'MK600';
     String companyName = '';
@@ -25,6 +29,11 @@ class Monitor {
 void printModelName(){
   print(model) ;
 }
+
+// static method
+ static String getSampleData(){
+    return'dummy';
+ }
 }
 //  বাকিটা main.dart এ দেওয়া আছে
 

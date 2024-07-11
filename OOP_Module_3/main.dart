@@ -17,4 +17,6 @@ void main(){
    rafisMonitor.companyName ='MSI';
    print(rafisMonitor.companyName);
 
+   print(Monitor.sample);
+          print(   Monitor.getSampleData());
 }
