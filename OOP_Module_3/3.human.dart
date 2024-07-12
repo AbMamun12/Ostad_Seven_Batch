@@ -3,10 +3,16 @@ void main(){
 // class-Human
 //class-name name = class-name()
 
-Human rahim = Human();
+Human rahim = Human('Abdullah');
 rahim.eating();
 rahim.moving();
 rahim.talking('Tamim');
+
+// change করতে চাইলে
+ Human karim = Human('Karim mia');
+ print(karim.name);
+
+
 
 
 }
@@ -15,6 +21,18 @@ class Human{
   String name ='rahim';
   int age =23;
   String address ='Dhaka';
+
+
+ // Dafult constructor
+  //Human(){
+  //}
+  Human(String username){
+    print('Creating a new Human $username');
+    name= username;
+    age= userAge;
+    address= userAddress;
+
+  }
 
 
   void moving (){
